@@ -11,6 +11,30 @@ A full-stack application for managing vector collections, ingesting documents, a
 ![FAISS](https://img.shields.io/badge/FAISS-1.7+-blue?style=flat-square)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-4.0-38B2AC?style=flat-square&logo=tailwindcss&logoColor=white)
 
+Part of the [Mastering RAG](https://github.com/kishore2797/mastering-rag) ecosystem → tutorial: [rag-04-vector-stores](https://github.com/kishore2797/rag-04-vector-stores).
+
+---
+
+## 🌍 Real-World Scenario
+
+> You've embedded 50,000 customer support articles. A user asks "refund policy for international orders placed before January." **Pure vector search** finds refund articles but also domestic and general policy. **With metadata filtering** (e.g. category=international, date&lt;January) and **hybrid search** (keyword "refund" + semantic similarity), you narrow to the 3 articles that matter. That's the power of a well-configured vector store.
+
+---
+
+## 🏗️ What You'll Build
+
+A full-stack vector store app with **ChromaDB and FAISS**: create collections, ingest documents, run **semantic**, **keyword**, and **hybrid search** with metadata filtering. The building block for any production RAG pipeline.
+
+---
+
+## 🔑 Key Concepts
+
+- **ANN search** — Approximate nearest neighbor for fast similarity search
+- **Distance metrics** — Cosine similarity, L2, dot product
+- **Metadata filtering** — Narrow search by date, category, tags before vector comparison
+- **Hybrid search** — Combine vector similarity with keyword matching (BM25)
+- **Persistence** — Save and reload vector indexes across restarts
+
 ---
 
 ## ✨ Features
