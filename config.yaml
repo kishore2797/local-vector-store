@@ -1,0 +1,33 @@
+storage:
+  base_path: "./vector_data"
+  default_backend: "chroma"
+  chroma:
+    persist_directory: "./vector_data/chroma"
+    anonymized_telemetry: false
+  faiss:
+    index_type: "Flat"
+    nprobe: 10
+    persist_directory: "./vector_data/faiss"
+
+embedding:
+  default_model: "all-MiniLM-L6-v2"
+  device: "cpu"
+  cache_dir: null
+
+chunking:
+  default_strategy: "recursive"
+  default_chunk_size: 1000
+  default_chunk_overlap: 200
+  min_chunk_size: 50
+  max_chunk_size: 5000
+
+api:
+  host: "0.0.0.0"
+  port: 8000
+  cors_origins:
+    - "http://localhost:5173"
+    - "http://localhost:3000"
+  max_upload_size_mb: 50
+  max_batch_size: 500
+  max_collections: 50
+  rate_limit_per_minute: 100

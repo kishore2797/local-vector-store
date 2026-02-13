@@ -1,0 +1,17 @@
+{
+  "documents": [
+    {
+      "text": "Machine learning is a subset of artificial intelligence that enables systems to learn from data.",
+      "metadata": {"category": "tech", "source": "wiki"}
+    },
+    {
+      "text": "Vector databases store high-dimensional embeddings for fast similarity search.",
+      "metadata": {"category": "tech", "source": "blog"}
+    },
+    {
+      "text": "The Supreme Court ruled on the constitutional validity of the new privacy law.",
+      "metadata": {"category": "legal", "source": "news"}
+    }
+  ],
+  "on_conflict": "error"
+}
